@@ -1,0 +1,22 @@
+//BaseUrl
+private static final String BASE_URL = "https://developer.android.com/guide/components/intents-common.html";
+
+//query parameters
+private static final String SOURCE_PARAM = "utm_source";
+private static final String MEDIUM_PARAM = "utm_medium";
+private static final String CAMPAIGN_PARAM = "utm_campaign"
+
+//query parameters value
+private static final String param = "udacity";
+private static final String medium = "course";
+private static final String campaign = "android_basics#Phone";
+
+public Uri builUri() {
+             Uri builtUri = Uri.parse(BASE_URL).buildUpon()
+                    .appendQueryParameter(SOURCE_PARAM, param)
+                    .appendQueryParameter(MEDIUM_PARAM, medium)
+                    .appendQueryParameter(CAMPAIGN_PARAM, campaign)
+                    .built();
+
+            return builtUri;
+}
