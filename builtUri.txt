@@ -16,7 +16,7 @@ public Uri builUri() {
                     .appendQueryParameter(SOURCE_PARAM, param)
                     .appendQueryParameter(MEDIUM_PARAM, medium)
                     .appendQueryParameter(CAMPAIGN_PARAM, campaign)
-                    .built();
+                    .build();
 
             return builtUri;
 }
